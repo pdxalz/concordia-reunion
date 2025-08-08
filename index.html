@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Concordia High School — Class of 1975 — 50-Year Reunion</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <!-- Simple blue jay SVG mascot -->
+      <div class="mascot" aria-hidden="true">
+        <svg width="72" height="72" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+          <g transform="translate(0,0)">
+            <circle cx="32" cy="32" r="30" fill="#ffffff" stroke="#1f6fb2" stroke-width="2"/>
+            <path d="M18 36c0-8 8-14 14-14s14 6 14 14c0 6-6 12-14 12S18 42 18 36z" fill="#1f6fb2"/>
+            <path d="M36 28c2 1 3 3 2 5-1 2-4 3-6 2" fill="#bfe0ff"/>
+            <circle cx="36" cy="29" r="2" fill="#fff"/>
+            <path d="M24 40c4 2 8 3 12 2" stroke="#08395e" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+          </g>
+        </svg>
+      </div>
+      <div class="titles">
+        <h1>Concordia High School</h1>
+        <p class="subtitle">Class of 1975 — 50-Year Reunion</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="content">
+    <section class="welcome card">
+      <h2>Welcome</h2>
+      <p>Welcome classmates! This site holds photos from our 50-year reunion. Feel free to browse, download, and share memories. If you want captions or names added to any photo, tell me which image and the caption you'd like.</p>
+    </section>
+
+    <section class="gallery card">
+      <h2>Photo Gallery</h2>
+      <div class="grid">
+        <!-- Repeat this <figure> block for each photo in your images folder -->
+        <figure class="photo">
+          <img src="images/PHOTO_FILENAME.jpg" alt="Reunion photo">
+          <figcaption>PHOTO_FILENAME.jpg</figcaption>
+        </figure>
+        <!-- Add more figures here -->
+      </div>
+    </section>
+
+    <section class="memorial card">
+      <h2>In Memoriam</h2>
+      <p class="placeholder">This section is reserved for remembering classmates who are no longer with us. If you'd like names listed here, reply with them and I'll add them.</p>
+    </section>
+
+    <footer class="footer card">
+      <p>Built for Concordia High School — Class of 1975. Share this site with classmates using this GitHub Pages link.</p>
+    </footer>
+  </main>
+
+  <script>
+    // Click image to open full size
+    document.querySelectorAll('.gallery img').forEach(img => {
+      img.addEventListener('click', () => window.open(img.src, '_blank'));
+    });
+  </script>
+</body>
+</html>
