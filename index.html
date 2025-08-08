@@ -5,39 +5,57 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Concordia High School — Class of 1975 — 50-Year Reunion</title>
   <!-- Intentionally no external CSS to avoid conflicts -->
-  <style>
-    :root { --blue:#1a237e; --text:#ffffff; --accent:#ffeb3b; }
-    * { box-sizing:border-box; }
-    body {
-      margin:0; font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Arial;
-      background:var(--blue); color:var(--text);
-    }
-    header { text-align:center; padding:24px 12px; }
-    header h1 { margin:0; font-size:2rem; }
-    header p { margin:6px 0 0; font-size:1.15rem; }
-    main { max-width:860px; margin:0 auto; padding:10px 16px 48px; }
-    section { margin:28px 0; }
-    h2 { margin:0 0 12px; padding-bottom:6px; border-bottom:2px solid rgba(255,255,255,0.75); }
-    a { color:var(--accent); }
+<style>
+  :root { --blue:#1a237e; --text:#ffffff; --accent:#ffeb3b; }
+  * { box-sizing:border-box; }
+  body {
+    margin:0;
+    font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Arial;
+    background:var(--blue);
+    color:var(--text);
+    font-size: 130%; /* increase all text 30% */
+  }
+  header { text-align:center; padding:24px 12px; }
+  header h1 { margin:0; font-size:2.6rem; } /* was 2rem */
+  header p { margin:6px 0 0; font-size:1.5rem; } /* was 1.15rem */
+  main { max-width:860px; margin:0 auto; padding:10px 16px 48px; }
+  section { margin:28px 0; }
+  h2 {
+    margin:0 0 12px;
+    padding-bottom:6px;
+    border-bottom:2px solid rgba(255,255,255,0.75);
+    font-size: 1.95em; /* larger section headings */
+  }
+  a { color:var(--accent); font-size: 1.1em; }
 
-    /* One-column gallery */
-    .gallery .photo {
-      margin:0 0 20px; background:#ffffff; color:#111;
-      border-radius:8px; overflow:hidden; border:2px solid #ffffff;
-    }
-    .gallery .photo img { display:block; width:100%; height:auto; }
-    .gallery .photo figcaption { padding:10px 12px; font-size:14px; background:#f4f6f8; }
+  /* One-column gallery */
+  .gallery .photo {
+    margin:0 0 20px;
+    background:#ffffff;
+    color:#111;
+    border-radius:8px;
+    overflow:hidden;
+    border:2px solid #ffffff;
+    font-size: 1.1em;
+  }
+  .gallery .photo img { display:block; width:100%; height:auto; }
+  .gallery .photo figcaption { padding:10px 12px; font-size:1em; background:#f4f6f8; }
 
-    /* Memoriam image */
-    .memorial img {
-      max-width:100%; height:auto; display:block;
-      margin-top:12px; border:3px solid #fff; border-radius:6px;
-    }
+  /* Memoriam image */
+  .memorial img {
+    max-width:100%;
+    height:auto;
+    display:block;
+    margin-top:12px;
+    border:3px solid #fff;
+    border-radius:6px;
+  }
 
-    /* Make sure nothing is hidden */
-    .grid, .gallery, .memorial, .welcome { display:block; }
-    .grid { display:block; } /* override any old grid/flex rules */
-  </style>
+  /* Make sure nothing is hidden */
+  .grid, .gallery, .memorial, .welcome { display:block; }
+  .grid { display:block; }
+</style>
+
 </head>
 <body>
   <header>
