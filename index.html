@@ -4,98 +4,114 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Concordia High School — Class of 1975 — 50-Year Reunion</title>
-  <link rel="stylesheet" href="styles.css">
+  <!-- Intentionally no external CSS to avoid conflicts -->
+  <style>
+    :root { --blue:#1a237e; --text:#ffffff; --accent:#ffeb3b; }
+    * { box-sizing:border-box; }
+    body {
+      margin:0; font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Arial;
+      background:var(--blue); color:var(--text);
+    }
+    header { text-align:center; padding:24px 12px; }
+    header h1 { margin:0; font-size:2rem; }
+    header p { margin:6px 0 0; font-size:1.15rem; }
+    main { max-width:860px; margin:0 auto; padding:10px 16px 48px; }
+    section { margin:28px 0; }
+    h2 { margin:0 0 12px; padding-bottom:6px; border-bottom:2px solid rgba(255,255,255,0.75); }
+    a { color:var(--accent); }
+
+    /* One-column gallery */
+    .gallery .photo {
+      margin:0 0 20px; background:#ffffff; color:#111;
+      border-radius:8px; overflow:hidden; border:2px solid #ffffff;
+    }
+    .gallery .photo img { display:block; width:100%; height:auto; }
+    .gallery .photo figcaption { padding:10px 12px; font-size:14px; background:#f4f6f8; }
+
+    /* Memoriam image */
+    .memorial img {
+      max-width:100%; height:auto; display:block;
+      margin-top:12px; border:3px solid #fff; border-radius:6px;
+    }
+
+    /* Make sure nothing is hidden */
+    .grid, .gallery, .memorial, .welcome { display:block; }
+    .grid { display:block; } /* override any old grid/flex rules */
+  </style>
 </head>
 <body>
-  <header class="site-header">
-    <div class="brand">
-      <!-- Simple blue jay SVG mascot -->
-      <div class="mascot" aria-hidden="true">
-        <svg width="72" height="72" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-          <g transform="translate(0,0)">
-            <circle cx="32" cy="32" r="30" fill="#ffffff" stroke="#1f6fb2" stroke-width="2"/>
-            <path d="M18 36c0-8 8-14 14-14s14 6 14 14c0 6-6 12-14 12S18 42 18 36z" fill="#1f6fb2"/>
-            <path d="M36 28c2 1 3 3 2 5-1 2-4 3-6 2" fill="#bfe0ff"/>
-            <circle cx="36" cy="29" r="2" fill="#fff"/>
-            <path d="M24 40c4 2 8 3 12 2" stroke="#08395e" stroke-width="1.5" fill="none" stroke-linecap="round"/>
-          </g>
-        </svg>
-      </div>
-      <div class="titles">
-        <h1>Concordia High School</h1>
-        <p class="subtitle">Class of 1975 — 50-Year Reunion</p>
-      </div>
-    </div>
+  <header>
+    <h1>Concordia High School</h1>
+    <p>Class of 1975 — 50-Year Reunion</p>
   </header>
 
-  <main class="content">
-    <section class="welcome card">
+  <main>
+    <section class="welcome">
       <h2>Welcome</h2>
-      <p>Welcome classmates! This site holds photos from our 50-year reunion. Feel free to browse, download, and share memories. If you want captions or names added to any photo, tell me which image and the caption you'd like.</p>
+      <p>Welcome classmates! Here are a few photos from the class reunion.</p>
+      <p>We also played a Concordia High 1975 trivia game similar to the TV game: <a href="jaybirdy.html">Jaybirdy Trivia Game</a></p>
     </section>
 
-    <section class="gallery card">
+    <section class="gallery">
       <h2>Photo Gallery</h2>
-      <div class="grid">
-        <figure class="photo">
-          <img src="images/2025 CLHS Reunion_6a.jpg" alt="Reunion photo: 2025 CLHS Reunion_6a.jpg">
-          <figcaption>2025 CLHS 50 Year Reunion</figcaption>
-        </figure>
-        <figure class="photo">
-          <img src="images/2025 CLHS Reunion_8.jpg" alt="Reunion photo: 2025 CLHS Reunion_8.jpg">
-          <figcaption>1975 Seniors Allison, Alan, Kit, Gene, Eileen, Jim, Marsha, Marty, Debbie (Leslie and Steve missed the photo)</figcaption>
-        </figure>
-        <figure class="photo">
-          <img src="images/2025 CLHS Reunion_9.jpg" alt="Reunion photo: 2025 CLHS Reunion_9.jpg">
-          <figcaption>Group Photo including other years</figcaption>
-        </figure>
-        <figure class="photo">
-          <img src="images/2025 CLHS Reunion_14a.jpg" alt="Reunion photo: 2025 CLHS Reunion_14a.jpg">
-          <figcaption>1975 in the News</figcaption>
-        </figure>
-        <figure class="photo">
-          <img src="images/2025 CLHS Reunion_10b.jpg" alt="Reunion photo: 2025 CLHS Reunion_10b.jpg">
-          <figcaption>Kit, Brian'73, Eileen, Marsha, Dalene'78, Allison, Chuck Kunert</figcaption>
-        </figure>
-        <figure class="photo">
-          <img src="images/2025 CLHS Reunion_11b.jpg" alt="Reunion photo: 2025 CLHS Reunion_11b.jpg">
-          <figcaption>Dalene'78, Eileen, Debbie'76, Bryan'73, Marsha, Chuck Kunert, Barbara'76</figcaption>
-        </figure>
-        <figure class="photo">
-          <img src="images/2025 CLHS Reunion_1a.jpg" alt="Reunion photo: 2025 CLHS Reunion_1a.jpg">
-          <figcaption>Bryan'73, Eileen, Marsha, Dalene'78, Debbie'76, Chuck Kunert, Barbara'76, Allison</figcaption>
-        </figure>
-        <figure class="photo">
-          <img src="images/2025 CLHS Reunion_2b.jpg" alt="Reunion photo: 2025 CLHS Reunion_2b.jpg">
-          <figcaption>Bryan'73, Marsha, Chuck Kunert, Debbie'76, Allison, Kit</figcaption>
-        </figure>
-        <figure class="photo">
-          <img src="images/2025 CLHS Reunion_3b.jpg" alt="Reunion photo: 2025 CLHS Reunion_3b.jpg">
-          <figcaption>Steve and Jim</figcaption>
-        </figure>
-        <figure class="photo">
-          <img src="images/2025 CLHS Reunion_4b.jpg" alt="Reunion photo: 2025 CLHS Reunion_4b.jpg">
-          <figcaption>Leslie and Gene</figcaption>
-        </figure>
-        <figure class="photo">
-          <img src="images/2025 CLHS Reunion_5b.jpg" alt="Reunion photo: 2025 CLHS Reunion_5b.jpg">
-          <figcaption>2025 CLHS Reunion</figcaption>
-        </figure>
-      </div>
+
+      <!-- Your photos (kept as you had them) -->
+      <figure class="photo">
+        <img src="images/2025 CLHS Reunion_6a.jpg" alt="2025 CLHS 50 Year Reunion">
+        <figcaption>2025 CLHS 50 Year Reunion</figcaption>
+      </figure>
+      <figure class="photo">
+        <img src="images/2025 CLHS Reunion_8.jpg" alt="1975 Seniors">
+        <figcaption>Class of 1975: Allison, Alan, Kit, Gene, Eileen, Jim, Marsha, Marty, Debbie (Leslie and Steve missed the photo)</figcaption>
+      </figure>
+      <figure class="photo">
+        <img src="images/2025 CLHS Reunion_9.jpg" alt="Group Photo including other years">
+        <figcaption>Representing Classes of   ‘72   ‘73   ‘74   ‘75   ‘76   ‘78
+Debbie-76, Brenda-74, Alan, Allison, Barbara-76, Kit, Carol-72, Gene, Jim, Eileen, Scott,  Marsha, Brian-73, Michelle-74,  Marty, Debbie </figcaption>
+      </figure>
+      <figure class="photo">
+        <img src="images/2025 CLHS Reunion_14a.jpg" alt="1975 in the News">
+        <figcaption>1975 in the News</figcaption>
+      </figure>
+      <figure class="photo">
+        <img src="images/2025 CLHS Reunion_10b.jpg" alt="Kit, Brian'73, Eileen, Marsha, Dalene'78, Allison, Chuck Kunert">
+        <figcaption>Kit, Brian'73, Eileen, Marsha, Dalene'78, Allison, Chuck Kunert</figcaption>
+      </figure>
+      <figure class="photo">
+        <img src="images/2025 CLHS Reunion_11b.jpg" alt="Dalene'78, Eileen, Debbie'76, Bryan'73, Marsha, Chuck Kunert, Barbara'76">
+        <figcaption>Dalene'78, Eileen, Debbie'76, Bryan'73, Marsha, Chuck Kunert, Barbara'76</figcaption>
+      </figure>
+      <figure class="photo">
+        <img src="images/2025 CLHS Reunion_1a.jpg" alt="Bryan'73, Eileen, Marsha, Dalene'78, Debbie'76, Chuck Kunert, Barbara'76, Allison">
+        <figcaption>Bryan'73, Eileen, Marsha, Dalene'78, Debbie'76, Chuck Kunert, Barbara'76, Allison</figcaption>
+      </figure>
+      <figure class="photo">
+        <img src="images/2025 CLHS Reunion_2b.jpg" alt="Bryan'73, Marsha, Chuck Kunert, Debbie'76, Allison, Kit">
+        <figcaption>Bryan'73, Marsha, Chuck Kunert, Debbie'76, Allison, Kit</figcaption>
+      </figure>
+      <figure class="photo">
+        <img src="images/2025 CLHS Reunion_3b.jpg" alt="Steve and Jim">
+        <figcaption>Steve and Jim</figcaption>
+      </figure>
+      <figure class="photo">
+        <img src="images/2025 CLHS Reunion_4b.jpg" alt="Leslie and Gene">
+        <figcaption>Leslie and Gene</figcaption>
+      </figure>
+      <figure class="photo">
+        <img src="images/2025 CLHS Reunion_5b.jpg" alt="2025 CLHS Reunion">
+        <figcaption>2025 CLHS Reunion</figcaption>
+      </figure>
     </section>
 
-    <section class="memorial card">
+    <section class="memorial">
       <h2>In Memoriam</h2>
-      <p class="placeholder">This section is reserved for remembering classmates who are no longer with us. If you'd like names listed here, reply with them and I'll add them.</p>
+      <p>This section is reserved for remembering classmates who are no longer with us.</p>
+      <img src="images/memoriam.jpg" alt="In Memoriam">
     </section>
-
-    <footer class="footer card">
-      <p>Built for Concordia High School — Class of 1975. Share this site with classmates using your GitHub Pages link.</p>
-    </footer>
   </main>
 
   <script>
-    // Click image to open full size in a new tab
+    // Open any gallery image full-size in a new tab
     document.querySelectorAll('.gallery img').forEach(img => {
       img.addEventListener('click', () => window.open(img.src, '_blank'));
     });
